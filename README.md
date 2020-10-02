@@ -14,12 +14,12 @@ For SPI it is then required to create a SPI interface before accessing to the se
     dev_spi = new SPIClass(SPI_MOSI, SPI_MISO, SPI_SCK);  
     dev_spi->begin();
 
-An instance can be created and enbaled when the I2C bus is used following the procedure below:  
+An instance can be created and enabled when the I2C bus is used following the procedure below:  
 
     Magneto = new IIS2MDCSensor(dev_i2c);  
     Magneto->Enable();
 
-An instance can be created and enbaled when the SPI bus is used following the procedure below:  
+An instance can be created and enabled when the SPI bus is used following the procedure below:  
 
     Magneto = new IIS2MDCSensor(dev_spi, CS_PIN);  
     Magneto->Enable();
